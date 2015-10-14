@@ -6,7 +6,7 @@ ENV JRE_HOME /opt/jre1.8.0_51
 # Install JRE8
 WORKDIR /opt
 RUN curl -Lkj -H "Cookie: oraclelicense=accept-securebackup-cookie" \
-    http://download.oracle.com/otn-pub/java/jdk/8u51-b16/jre-8u51-linux-x64.tar.gz | \
+    http://download.oracle.com/otn-pub/java/jdk/8u60-b27/jre-8u60-linux-x64.tar.gz | \
     tar xz && \
     chown -R root:root ${JRE_HOME} && \
     rm -f ${JRE_HOME}/COPYRIGHT && \
